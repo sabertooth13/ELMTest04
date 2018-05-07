@@ -40,12 +40,32 @@ namespace UnitTests
 
             // to add a product to the cart , we give the productID and no of Products;
 
-            cart.AddItem(1, 2);
-            cart.AddItem(2, 3);
-            cart.AddItem(3, 5);
+
+            int cartItmQty1 = 2;
+            cart.AddItem(1, cartItmQty1);
+            int cartItmQty2 = 3;
+            cart.AddItem(2, cartItmQty2);
+            int cartItmQty3 = 5;
+            cart.AddItem(3, cartItmQty3);
             CheckOutService checkOut = new CheckOutService();
             checkOut.CalcualteTotal(cart.GetTotalItemsOrdered());
             Assert.AreEqual(40, checkOut.Total);
+
+
+
+            // this portion of code is for displaying the results
+
+
+            string opHead = string.Format("Item\tQuantity\tPricet\tTotal\tPromotion");
+            string opl1 = string.Format("{0}\t{1}\t${2}\t${3}\t{4}", "A", cartItmQty1, "20", checkOut.Buy1Get1Total, "Buy 1 Get 1 Free");
+            string opl2 = string.Format("{0}\t{1}\t${2}\t${3}\t{4}", "B", cartItmQty2, "4", checkOut.ThreeFor10Total, "3 for 10 Euro");
+            string opl3 = string.Format("{0}\t{1}\t${2}\t${3}\t{4}", "C", cartItmQty3, "2", checkOut.NoOfferTotal, "");
+            string tot = string.Format("\tTotal \t \t${0}", checkOut.Total);
+            Console.WriteLine(opHead);
+            Console.WriteLine(opl1);
+            Console.WriteLine(opl2);
+            Console.WriteLine(opl3);
+            Console.WriteLine(tot);
 
         }
 
@@ -78,6 +98,20 @@ namespace UnitTests
             CheckOutService checkOut = new CheckOutService();
             checkOut.CalcualteTotal(cart.GetTotalItemsOrdered());
             Assert.AreEqual(94, checkOut.Total);
+
+
+
+            // this portion of code is for displaying the results 
+            string opHead = string.Format("Item\tQuantity\tPricet\tTotal\tPromotion");
+            string opl1 = string.Format("{0}\t{1}\t${2}\t${3}\t{4}", "A", cartItmQty1, "20", checkOut.Buy1Get1Total, "Buy 1 Get 1 Free");
+            string opl2 = string.Format("{0}\t{1}\t${2}\t${3}\t{4}", "B", cartItmQty2, "4", checkOut.ThreeFor10Total, "3 for 10 Euro");
+            string opl3 = string.Format("{0}\t{1}\t${2}\t${3}\t{4}", "C", cartItmQty3, "2", checkOut.NoOfferTotal, "");
+            string tot = string.Format("\tTotal \t \t${0}", checkOut.Total);
+            Console.WriteLine(opHead);
+            Console.WriteLine(opl1);
+            Console.WriteLine(opl2);
+            Console.WriteLine(opl3);
+            Console.WriteLine(tot);
         }
     }
 }
