@@ -21,6 +21,15 @@ namespace UnitTests
             productService.ApplyOfferToProducts(ProductType.B);
             productService.ApplyOfferToProducts(ProductType.c);
             IList<Product> prod1s = repository.FindAll();
+            Cart cart = new Cart(new ProductRepository());
+
+            // to add a product to the cart , we give the productID and no of Products;
+
+            cart.AddItem(1, 2);
+            cart.AddItem(2, 3);
+            cart.AddItem(3, 5);
+            cart.GetTotalItemsOrdered();
+
         }
     }
 }

@@ -24,6 +24,11 @@ namespace Repository
             return products;
 
         }
+
+        public Product FindByID(int id)
+        {
+            return products.FirstOrDefault(prod => prod.Id == id);
+        }
         public IList<Product> FindAllByType(ProductType productName)
         {
             IList<Product> productFound = products.FindAll(prod => prod.Name == productName);

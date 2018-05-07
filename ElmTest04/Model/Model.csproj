@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buy1Get1Stratergy.cs" />
+    <Compile Include="Cart.cs" />
     <Compile Include="IOfferStratergy.cs" />
     <Compile Include="IProductRepository.cs" />
     <Compile Include="Models\Price.cs" />
