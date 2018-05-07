@@ -27,6 +27,7 @@ namespace UnitTests
             cart.AddItem(3, 5);
             CheckOutService checkOut = new CheckOutService();
             checkOut.CalcualteTotal(cart.GetTotalItemsOrdered());
+            Assert.AreEqual(40, checkOut.Total);
 
         }
     }

@@ -9,6 +9,11 @@ namespace Service
 {
     public class CheckOutService
     {
+
+        public decimal Buy1Get1Total { get; set; }
+        public decimal ThreeFor10Total { get; set; }
+        public decimal NoOfferTotal { get; set; }
+        public decimal Total { get; set; }
         public void CalcualteTotal(List<CartLine> cartLines)
         {
             decimal total;
@@ -34,13 +39,13 @@ namespace Service
                     productC = cartline;
                 }
             }
-
             ComputeTotalValueBase computeTotalA = CartLineComputeTotalService.GetComputedPaymentFor(ProductType.A);
-            decimal ans1 = computeTotalA.ComputeTotalValue(productA);
+            Buy1Get1Total = computeTotalA.ComputeTotalValue(productA);
             ComputeTotalValueBase computeTotalB = CartLineComputeTotalService.GetComputedPaymentFor(ProductType.B);
-            decimal ans2 = computeTotalB.ComputeTotalValue(productB);
+            ThreeFor10Total = computeTotalB.ComputeTotalValue(productB);
             ComputeTotalValueBase computeTotalC = CartLineComputeTotalService.GetComputedPaymentFor(ProductType.c);
-            decimal ans3 = computeTotalC.ComputeTotalValue(productC);
+            NoOfferTotal = computeTotalC.ComputeTotalValue(productC);
+            Total = Buy1Get1Total + ThreeFor10Total + NoOfferTotal;
 
         }
 
