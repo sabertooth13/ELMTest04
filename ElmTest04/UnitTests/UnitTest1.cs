@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Model;
+using Repository;
 
 namespace UnitTests
 {
@@ -9,6 +12,8 @@ namespace UnitTests
         [TestMethod]
         public void TestMethod1()
         {
+            ProductRepository repository = new ProductRepository();
+            IList<Product> prods = repository.FindAll();
         }
     }
 }
