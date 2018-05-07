@@ -4,3 +4,6 @@ C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\obj\Debug\Ser
 C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
 C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\obj\Debug\Service.dll
 C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\obj\Debug\Service.pdb
+C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\bin\Debug\Model.dll
+C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\bin\Debug\Model.pdb
+C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\obj\Debug\Service.csproj.CopyComplete

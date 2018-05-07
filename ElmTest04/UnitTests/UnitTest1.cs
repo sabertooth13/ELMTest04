@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Model;
 using Repository;
+using Service;
 
 namespace UnitTests
 {
@@ -14,6 +15,12 @@ namespace UnitTests
         {
             ProductRepository repository = new ProductRepository();
             IList<Product> prods = repository.FindAll();
+
+            ProductService productService = new ProductService(repository);
+            productService.ApplyOfferToProducts(ProductType.A);
+            productService.ApplyOfferToProducts(ProductType.B);
+            productService.ApplyOfferToProducts(ProductType.c);
+            IList<Product> prod1s = repository.FindAll();
         }
     }
 }

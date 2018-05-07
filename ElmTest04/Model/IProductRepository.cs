@@ -9,5 +9,6 @@ namespace Model
     public interface IProductRepository
     {
         IList<Product> FindAll();
+        IList<Product> FindAllByType(ProductType productName);
     }
 }
