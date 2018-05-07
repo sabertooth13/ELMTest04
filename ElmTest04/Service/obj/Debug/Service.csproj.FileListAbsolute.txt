@@ -1,0 +1,6 @@
+C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\bin\Debug\Service.dll
+C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\bin\Debug\Service.pdb
+C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\obj\Debug\Service.dll
+C:\Users\DarkKnight!!\source\repos\ELM\ELMTest04\ElmTest04\Service\obj\Debug\Service.pdb
